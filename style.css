@@ -1,0 +1,229 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+ul.no_bullets {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12372a;
+  padding: 10px 20px;
+}
+
+nav div a img {
+  margin: 5px;
+  width: 100px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+nav ul li a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  color: #436850;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.homeheader {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100%;
+  color: #12372a;
+  font-family: "Montserrat";
+}
+
+.shopnowbtn {
+  background: #12372a;
+  padding: 12px 24px;
+  width: 150px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fbfada;
+  text-decoration: none;
+}
+.shopnowbtn:hover {
+  transform: scale(1.05);
+  background: #436850;
+}
+
+#plants {
+  padding-top: 30px;
+}
+#soil {
+  padding-top: 30px;
+}
+
+#accessories {
+  padding-top: 30px;
+}
+
+/* Set up grid display with some spacing */
+.plantslist,
+.soilslist,
+.accessoriesslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+
+  text-transform: capitalize;
+}
+
+.plantslist .item,
+.soilslist .item,
+.accessoriesslist .item {
+  width: 200px;
+
+  padding: 10px;
+  background-color: #adbc9f;
+  padding-bottom: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.plantslist .item img,
+.soilslist .item img,
+.accessoriesslist .item img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.homestyle {
+  width: 100vw;
+  height: 50vh;
+  margin-top: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.homeimg {
+  border-radius: 30px;
+  width: 50vw;
+  height: 100%;
+  background-size: cover;
+  background-image: url("images/logo.jpg");
+  overflow: hidden;
+}
+
+.hometext {
+  width: 50vw;
+  padding-left: 20px;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.homepara {
+  font-size: 18px;
+  font-weight: 200;
+
+  width: auto;
+
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.cardtitle {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: "Poppins";
+  padding-left: 4px;
+  color: #fbfada;
+}
+.price {
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #fbfada;
+}
+.cardtitlediv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addcrtbtn {
+  background: #12372a;
+  padding: 10px;
+  width: 100px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fbfada;
+  text-decoration: none;
+}
+.addcrtbtn:hover {
+  transform: scale(1.05);
+  background: #436850;
+}
+
+.favdiv {
+  display: flex;
+  justify-content: center;
+  background-color: #fbfada;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 200px;
+}
+.favimg {
+  font-size: 10px;
+}
+
+.material-icons {
+  font-size: 5px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.btndiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
