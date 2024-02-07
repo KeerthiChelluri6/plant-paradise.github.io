@@ -11,9 +11,27 @@ html {
   box-sizing: border-box;
 }
 
+.logoimg {
+  width: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  height: 20px;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: white;
+}
+
+.logotext {
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: white;
+}
 .container {
   position: relative;
-  padding: 20px;
+  padding: 10px;
 }
 
 ul.no_bullets {
@@ -25,10 +43,10 @@ ul.no_bullets {
 
 nav {
   display: flex;
+  border-radius: 10px;
   justify-content: space-between;
   align-items: center;
   background-color: #12372a;
-  padding: 10px 20px;
 }
 
 nav div a img {
@@ -37,11 +55,11 @@ nav div a img {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin-right: 20px;
 }
 
 nav ul li a {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -226,4 +244,70 @@ nav ul li a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.cartimg {
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+}
+.cartbtn {
+  background: #12372a;
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fbfada;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.carttext {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fbfada;
+  font-family: "Poppins";
+  padding: 10px;
+}
+
+.favbtnimg {
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+}
+.favbtn {
+  background: #fbfada;
+  height: 60px;
+
+  border-radius: 10px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fbfada;
+  text-decoration: none;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 150px;
+  z-index: 999;
+}
+
+.favtext {
+  font-size: 12px;
+  font-weight: bold;
+  color: #12372a;
+  font-family: "Poppins";
+  padding: 10px;
 }
